@@ -1,0 +1,6 @@
+@charset "UTF-8";
+body{text-align: center; background-color: yellow;}
+fieldset {background-color: white; border-radius: 50px;}
+body h1 a{text-decoration: none; list-style: none;}
+
+label{font-size: 22px;}

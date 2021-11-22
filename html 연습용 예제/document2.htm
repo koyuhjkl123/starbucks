@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>자바 도큐먼트 예제2</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {
+   text-align:center;
+   font-family:돋움;
+ }
+ hr {width:480px}
+ p {
+   font-size:12px;
+   color:green;
+ }
+ span {font-weight:bold}
+ img {
+   border:1px dotted darkgreen;
+   padding:5px;
+ }
+ input {
+   border:1px solid #333333;
+   padding:5px 0;
+   background:white;
+ }
+</style>
+</head>
+<body>
+<hr>
+<h3>현재 문서의 정보는 다음과 같습니다</h3>
+<script type="text/javascript">
+ document.write("<p><span> 문서의 최종 수정일 : </span> " + document.lastModified + "</p>")
+ document.write("<p><span> 문서의 현재 주소  : </span> " + document.URL + "</p>")
+ document.write("<p><span> 문서의 제목 : </span>" + document.title + "</p>")
+</script>
+<hr>
+<img src="images/img5.jpg">
+<form id="background">
+ <input type="button" value="길벗 홈페이지로 가기" onClick=" document.URL ='http://www.gilbut.co.kr'">
+ <input type="button" value="문서 제목 바꾸기" onClick="document.title = '▒ 새로 고친 문서 정보 ▒'">
+</form>
+</body>
+</html>

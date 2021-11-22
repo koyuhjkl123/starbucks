@@ -1,0 +1,1 @@
+document.querySelector(".test").innerHTML = 1020;

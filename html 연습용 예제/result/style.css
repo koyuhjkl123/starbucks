@@ -1,0 +1,70 @@
+ #menu {
+   margin-left:0; ¡¡ 
+   width:680px;¡¡
+   border-bottom:1px solid darkgreen;¡¡
+   border-top:1px solid darkgreen;¡¡
+   background:#a2ce54;¡¡
+   padding-top:10px;¡¡¡¡
+ }
+ #menu li {
+   margin-right:10px;
+   padding:0;
+   display:inline;
+   list-style-type:none;
+ }
+ #menu a {
+   margin:0 10px 4px 10px;
+   text-decoration:none;
+   font-size:12px;
+   color:#304e06;
+   font-weight:bold;
+ }
+ #menu a:hover {
+   background:url(images/tab3.gif) no-repeat bottom center;
+   padding-bottom:15px;
+   color:red;
+ }
+ #content1{
+   float:left;
+   padding-top:10px;
+   width:330px;
+   font-family:±¼¸²;
+   font-size:12px;
+ }
+ #balm{float:left}
+ #content2 {
+   margin-left:370px;
+   width:330px;
+   padding-top:10px;
+   font-family:±¼¸²;
+   font-size:12px;
+ }
+ #content2 dt {
+   margin-top:10px;
+   padding-left:15px;
+   font-weight:bold;
+   background:url(images/li.gif) no-repeat left top;
+ }
+ #infolist {
+   clear:left;
+   background:url(images/bgfooter.gif) repeat-x;
+   color:#fff;
+   width: 680px;
+ }
+ #infolist li {
+   display:inline;
+   font-size:12px;
+   line-height:40px;
+   margin-right:5px;
+ }
+ #list_title {
+   color:black;
+   font-weight:bold;
+   margin-right:15px;
+ }
+ #infolist li a {
+   color:white;
+   text-decoration:none;
+   padding-right:5px;
+   border-right:1px solid white;
+ }

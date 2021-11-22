@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>허브의 효능 </title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="alert4.css">
+<script type="text/javascript">
+ function show(num) {
+  var txt = document.getElementById("txt");
+  if (num == 1) {
+   txt.innerHTML = "<p id='herb1'>레몬그라스는 억새를 닮은 포아과의 다년초로 잎을 찢어서 손가락으로 비벼보면 레몬같은 향기가 난다하여 붙어진 이름이다. 약품, 비누,린스, 캔디 등의 부향제로 쓰인다. 인도나 동남아에서는 일상 음료로 상용하는데 이 차는 소화기능을 강화 할 뿐 아니라 빈혈에도 효과가 있으며 냉차로 마시면 더욱 향기롭다.</p>";
+  }
+  else if (num == 2) {
+   txt.innerHTML="<p id='herb2'>페퍼민트는 여러 나라 약전에도 올라 있는 귀중한 약초이며 위장병, 두통, 콜레라, 히스테리, 신경통, 류마티스, 치통, 산욕열, 산통 등의 약으로서 항염, 진통, 발한제 및 방부제로도 쓰인다. 옛날에는 감기나 위장병에 약으로 달여서 차로 만들어 마셨으며, 가을부터 매일 마시면 겨울에 감기를 앓지 않는다고 하며, 진정작용이 있어 심신이 불안할 때 마시면 기분을 차분하게 가라앉게 한다. 여름에는 냉차로 마시면 더욱 더 상쾌하고 청량감이 더해진다.</p>";
+  }
+  else {
+   txt.innerHTML = "<p id='herb3'>머리를 맑게 하고 기억력과 집중력을 향상시켜 수험생들이 늦게까지 공부하는데 잠을 쫓는 효과가 있다. 또한 두피의 비듬을 억제하고 모발을 성장시키는 효과도 있다. 로즈마리는 뇌 신경자극, 혈행촉진, 치매방지, 근육 긴장을 완화시켜 스트레스 해소에 좋다.</p>";
+  }
+ }
+</script>
+</head>
+<body>
+<h3> 허브의 효능 </h3>
+<img src="images/tea3.jpg" id="tea">
+<ul>
+ <li><a href="#" onclick="show(1)">레몬그라스(Lemongrass)</a></li>
+ <li><a href="#" onclick="show(2)">페파민트(Peppermint)</a></li>
+ <li><a href="#" onclick="show(3)">로즈마리(Rosemary)</a></li>
+</ul>
+<div id="txt">
+</div>
+</body>
+</html>

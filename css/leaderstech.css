@@ -1,0 +1,220 @@
+@charset "UTF-8";
+
+/*-----------스크롤 제거 설정-------*/
+body {overflow-x: hidden; margin: 0; padding: 0;}
+ul{list-style: none;}
+.vision, .history{display: none;}
+/* 상단 text 설정 작업*/
+.image{ width: 100%;  background-color: yellow; text-align: center; height: 370px;}
+
+.give{position: relative; left: 150px; bottom: 15px;}
+.div{position: relative;left: 27%; top: 30px; float: left;}
+
+.soles{border-bottom: 1px solid;}
+.leaders2{width: 60px; height: 60px;}
+.grave{font-size: 16px;}
+.leaders{font-size: 25px; font-weight: bold; }
+
+.years{position: relative; right: 134px; margin: 0;}
+.devices{position: relative; right: 90px;}
+.shops{position: relative; right: 127px;}
+
+
+.years2{font-size: 11px; font-weight: bold;}
+.years3{position: relative; right: 83px; font-size: 11px; font-weight: bold; }
+.years4{position: relative; right: 50px; font-size: 11px; font-weight: bold;}
+h2{color: red; font-weight: bold; margin: 20px 0 0 0;  clear: left;}
+.black1{position: absolute; left: 725px; top:100px; width: 40px; height: 40px; background-color: black; 
+border-radius: 50px;}
+.black2{position: absolute; left: 725px; top: 200px; width: 40px; height: 40px; background-color: black; border-radius: 50px;}
+.black3{position: absolute; left: 725px; top: 300px; width: 40px; height: 40px; background-color: black; border-radius: 50px;}
+
+.nav-1{display: block;}
+.nav-1 > ul{display: none;}
+.nav-1 > ul > li > a{list-style: none;}
+
+/*메뉴바 설정 작업*/
+.menu{ width: 100%; height: 62px; background-color: green; margin-top: -15px;}
+.nav-1 > ul{display: none; width: 400px; height: 450px; font-size: 20px; font-weight: bold;}
+.nav-1:hover > ul{display: block; position: absolute; list-style: none; z-index: 200;
+width: 225px; height: 155px; background-color: green; box-sizing: border-box; }
+.nav-1 > ul li{padding: 12px 20px 0 0; font-size: 20px; font-weight: bold;}
+.nav-1:hover > ul a{text-decoration: none; color: white; line-height: 40px; }
+.nav-1{display: block; float: left; padding: 15px 20px 0 20px; font-size: 22px; }
+.nav-1 > a{ color: white; text-decoration: none; font-weight: bold; font-family: 굴림;}
+
+.nav-1:last-child{float:right; margin-right: 155px;}
+.nav-1:first-child{float: left; margin-left: 125px;}
+.nav-1:nth-child(2){margin-left: 145px;}
+.nav-1:nth-child(3){margin-left: 145px;}
+.nav-1:nth-child(4){margin-left: 145px;}
+.nav-1:nth-child(5){margin-left: 145px;}
+
+.history-image{width: 95px; height: 95px; background-color: red; border-radius: 50px;
+margin: 30px 0 0 30px;}
+.vision{display: block; position: absolute; color: red; background-color: white; font-size: 15px;
+font-weight: bold; margin: 30px 0 0 0; width: 100px; text-align: center;}
+.top_image{width: 60%}
+.top_image1{float: right; margin: -110px 0 0 0; width: 480px; height: 270px;}
+
+.top3{list-style: none; text-align: center; width: 50%;}
+.top1{font-size: 14pt; line-height: 20px; font-weight: bold;color: #999;}
+.top2{font-size: 16pt; margin-top: 7px; line-height: 24px; font-weight: bold;
+color: #308f63;}
+.top12{font-size: 12pt; line-height: 24px; color: #585858;}
+
+.jung_gift0{background-color: green; width: 520px; height: 30px; margin: 50px 0 0 30px;}
+.jung_gic{background-color: red; width: 70px; height: 70px; border-radius: 50px; }
+
+
+.text3{float: right;}
+
+
+
+
+/*---------맨 상단 이미지 설정-------
+.bg_image {position: relative; right: 0; bottom: 0 ;width: 100%;height: 300px; margin: 0; padding: 0; background-color: yellow;}
+.back_oido {position: absolute; right: 20px; bottom: 340px; width: 15px; height: 15px; border-radius: 50px; z-index: 1; background-color: white;}
+.back_oido2 {position: absolute; right: 50px; bottom: 340px; width: 15px; height: 15px; border-radius: 50px; z-index: 1; background-color: white;}
+.back_oido3 { position: absolute; right: 80px; bottom: 340px; width: 15px; height: 15px;border-radius: 50px; z-index: 1; background-color: white;}
+
+----------메뉴바 설정 작업---------
+ dd a {text-decoration: none; color: white;}
+.menu{position: absolute; width: 100%; height: 58px; margin: 0;}
+.menu dl {display: -webkit-box;   -webkit-box-pack : justify; position: relative; z-index: 300;width: 100%; height: 100%; padding-left: 50px; padding-right: 50px; background-color: #308f63;}
+.menu dl dd .nav_1 {height: 58px; line-height: 58px; list-style-type: none; font-size: 18px; font-family: sans-serif; font-weight: bold;}
+.menu dd div ul li {list-style-type: none; opacity: 0;}
+
+
+
+
+---------중간 상단 이미지 설정-------
+.top {padding-top: 0; margin-top: 0;}
+.top_image1 {position: absolute; left: 570px; top: 310px; padding-top: 53px; width: 470px; height: 280px;}
+
+----------상단 폰트 설정------
+.top3 {margin-top: 160px;}
+.top3  li{list-style: none;}
+.top1 {font-size: 20px; color: #999999; padding-bottom: 5px; margin-top: 380px;position: relative; left: 75px;}
+.top2 {font-size: 21px; color: #308F63; font-weight: bold ; font-weight: bolder;padding-bottom: 27px; position: relative; left: 45px;}
+.top12 {padding-bottom: 5px; font-size: 14px; color: #6A6A6A;}
+.top13 {font-size: 14px; color: #6A6A6A;}
+
+
+-------------중간 이미지 설--------
+.jung { position: relative;}
+.jung_img{position: absolute; left: 8px; top: 11px; width: 55px; height: 45px; z-index: 250;}
+.jung_img1 {position: relative; left: 9px; top: 15px; width: 50px; height: 40px; z-index: 245;}
+.jung_img2 {position: relative; left: 12px; top: 14px; width: 50px; height: 40px; z-index: 240;}
+.bott_image {position:  absolute; left: 650px;width: 380px; height: 220px; margin-top: 10px;}
+.juso_images2 {position: absolute; bottom: 275px;left: 705px; width: 330px; height: 180px;}
+.juso_images3 {position: absolute; bottom: 65px; left: 705px; width: 205px; height: 180px;}
+.juso_images4 {position: absolute; bottom: 65px; left: 915px; width: 115px; height: 180px;}
+
+.jung_gift0 {position: relative; left: 30px; top: 33px; border-radius: 50px; background-color: #308F63; width: 70px; height: 70px; z-index: 1;}
+.jung_gift1 {position: relative; left: 30px; bottom: 130px; border-radius: 50px; background-color: #308F63; width: 70px; height: 70px; z-index: 2;}
+.jung_gift2 {position: relative; left: 550px; bottom: 928px; border-radius: 50px; background-color: #308F63; width: 70px; height: 70px; z-index: 3;}
+--------------중간 도형 설정--------
+.jung_tedo {position: relative; left: 60px; bottom: 35px; border-radius: 50px; background-color: #308F63; width: 460px; height: 25px; margin-top: 20px;}
+.jung_sun {position: relative; left: 60px; bottom: 200px; border-radius: 50px; background-color: #308F63; width: 460px; height: 25px; margin-top: 20px;}
+.jung_doa {position: relative; left: 580px; bottom: 995px; border-radius: 50px; background-color: #308F63; width: 460px; height: 25px; margin-top: 20px;}
+
+.tedo  li{list-style: none; color: white;}
+.sun  li{list-style: none; color: white;}
+.doa  li{list-style: none; color: white;}
+-------------상단 메누 도형 안 글씨 설정-----
+.list1 {position: relative; top: 2px; bottom: 3px;}
+.list2 {position: relative; left: 100px; bottom: 16px;}
+.list3 {position: relative; top: 2px; bottom: 3px;}
+.list4 {position: relative; left: 100px; bottom: 16px;}
+.list5 {position: relative; top: 2px; bottom: 3px;}
+.list6 {position: relative; left: 100px; bottom: 16px;}
+
+---------상단 폰트 위치 및 굴기 설정----
+.text li{ list-style: none; position: relative; bottom: 30px; font-size: 18px; color: #308F63; margin-bottom: 3px;}
+.text1 li{list-style: none; position: relative; left: 80px; bottom: 150px; font-size: 16px; margin-bottom: 5px; color: #6A6A6A;}
+.text, .text1{margin-top: 30px;}
+.text2 li{position: relative; bottom: 175px; list-style: none; font-size: 18px; color: #308F63; margin-bottom: 3px;}
+.text3 li{list-style: none; position: relative; left: 90px; bottom: 400px; margin-bottom: 5.5px; font-size: 16px; color: #6A6A6A;}
+.text4 li{list-style: none; position: relative; left: 520px; bottom: 970px; margin-bottom: 3px; font-size: 18px; color: #308F63;}
+.text5 li{list-style: none; position: relative; left: 610px; bottom: 1432px; margin-bottom: 5.5px; font-size: 16px; color:#6A6A6A;}
+.text6{list-style: none; position: absolute; right: 19px; top: 10px; color: white; font-size: 15.5px; font-weight: bold;}
+
+.ma_text4 li{margin-bottom: 20px;}
+
+------------배너 이미지 폰트 도형 css 작업 설정---------
+.bott_text0 {position: relative; left: 20px; bottom: 1330px; border-radius: 50px; background-color: #D93A1D; width: 95px; height: 95px; z-index: 8;}
+.bott_text {position: relative; bottom: 1415px; right: 10px; background-color: white; width: 140px; height: 42px; z-index: 155; font-size: 16px;}
+.bott24{list-style: none; color: #D93A1D; font-weight: bold;}
+.bott25{position: absolute; right: 30px;}
+.bott26{position: absolute; top: 20px;}
+
+----------하단 도형 폰트 css 작업 설정-----------
+.jusso2 {position: relative; right: 170px; bottom: 35px; border-radius: 50px; background-color: #D93A1D; width: 95px; height: 95px; z-index: 8;}
+.jusso_text {position: absolute; right: 220px; top: -13px; background-color: white; width: 140px; height: 47px; z-index: 9; font-size: 16px;}
+.bott27{list-style: none; color: #D93A1D; font-weight: bold;}
+.bott28{position: absolute; bottom: 20px; right: 45px;}
+.bott29{position: absolute; top: 25px; right: 25px;}
+
+
+.text_jso {letter-spacing: 40px;}
+.text_lo {letter-spacing: 12px;}
+
+하단 폰트 글씨 및 이미지 작업 설정
+.bott_image {position:  absolute; left: 650px;width: 380px; height: 220px; margin-top: 10px;}
+.juso_bott3 {list-style: none; position: relative; top: 10px; right: 15.5px; color: white; font-weight: bold;}
+.juso_bott4 {list-style: none; position: relative; bottom: 8px; right: 15px; color: white; font-weight: bold; font-size: 15.5px;}
+.juso_bott {list-style: none; position: relative; right: 10px; bottom: 7px; font-size: 15.5px; color: white; font-weight: bold;}
+
+.bott_bosa { list-style: none;position: relative; left: 140px; top: 55px; letter-spacing: 3px; color: #308F63; font-size: 15px; font-weight: bold;}
+.bott_bosa li {margin-bottom: 5px;}
+.bott_bosa1 {list-style: none;position: relative; left: 225px; bottom: 44px;color: gray; font-size: 15px; font-weight: bold;}
+.bott_bosa1 li{ margin-bottom: 5px;}
+
+.bott_bosa2 {list-style: none; position: relative; left: 140px; top: 45px; color: #308F63; font-size: 15px; font-weight: bold; letter-spacing: 3px;}
+.bott_bosa2 li {margin-bottom: 5px;}
+.bott_bosa3 { list-style: none; position: relative; left: 220px; bottom: 33px; color: gray; font-size: 15px; font-weight: bold;}
+.bott_bosa3 li {margin-bottom: 5px;}
+
+.bott_bosa4 {list-style: none; position: relative; bottom: 30px; left: 140px; color: #308F63; font-size: 15px; font-weight: bold; letter-spacing: 3px;}
+.bott_bosa4 li {margin-bottom: 5px;}
+.bott_bosa5 {list-style: none; position: relative; bottom: 108px; left: 220px; color: gray; font-size: 15px; font-weight: bold;}
+.bott_bosa5 li {margin-bottom: 5px;}
+
+.bott_bosa6 {list-style: none; position: relative; bottom: 27px; left: 140px; color: #308F63; font-size: 15px; font-weight: bold; letter-spacing: 3px;}
+.bott_bosa6 li {margin-bottom: 5px;}
+.bott_bosa7 {list-style: none; position: relative; bottom: 127px; left: 220px; color: gray; font-size: 15px; font-weight: bold;}
+.bott_bosa7 li {margin-bottom: 5px;}
+
+.jums{position: absolute; top: 1600px; left: 30px; }
+
+.top {position: relative; left: 27px; top: 400px; border-radius: 50px; background-color: #D93A1D; width: 95px; height: 95px; z-index: 3; margin-bottom: 0;}
+.top_mage{position: relative; left: 10px; top: 315px; border-radius: 50px; background-color: white; width: 135px; height: 42px; z-index: 155; font-size: 17px; font-weight: bold;}
+.top_mage li {list-style: none; color: red;}
+
+----------하단 도형 작업------------
+.bott {position: relative;}
+.juso {position: absolute; left: 180px; width: 165px; height: 35px; background-color: #308F63;}
+.juso1 {position: absolute; left: 180px; width: 165px; height: 35px; background-color: #308F63;}
+.juso3 {position: relative; bottom: 30px; left: 180px; width: 165px; height: 35px; background-color: #308F63;}
+.juso4 {position: relative; bottom: 25px; left: 180px; width: 165px; height: 35px; background-color: #308F63;}
+
+-----------절단선 설정 작업--------------
+.juso2 {position: absolute; border-bottom: 2px solid; width: 850px; color: #308F63;}
+.juso_sol {border-bottom: 2px solid; width: 850px; color: #308F63;}
+.juso_col {position: absolute; border-bottom: 2px solid; width: 850px; color: #308F63;}
+.juso_xol {border-bottom: 2px solid; width: 850px; color: #308F63;}
+.juso_uol {position: absolute; left: 185px; bottom: 190px; border-bottom: 2px solid; width: 850px; color: #308F63;}
+
+---------맨 하단 설정 작업------------
+.footer {position: relative; left: 0; right: 0;background-color: #308F63; height: 135px;}
+.footer:active{background-color: white;}
+
+.image_footer {margin-top: 20px; margin-left: 20px;}
+.footer_leaders {list-style: none; color: white; font-size: 23px; position: absolute; left: 85px; bottom: 50px; }
+.footer_leader2 {list-style: none; color: white; font-size: 22px;  margin-top: 2px; position: absolute; left: 20px; bottom: 20px;}
+
+.footer_le1, .footer_le2, .footer_le3 {list-style: none; font-size: 16px; color: white; text-align: center;margin-bottom: 10px;}
+.footer_le1 {position: absolute; bottom: 85px; left: 250px; }
+.footer_le2 {position: absolute; bottom: 52px; left: 250px;}
+.footer_le3 {position: absolute; bottom: 25px; left: 250px;}*/

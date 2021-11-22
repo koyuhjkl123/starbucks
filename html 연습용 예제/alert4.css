@@ -1,0 +1,49 @@
+body {
+  background-image:url(images/bg3.jpg); 
+  background-repeat : repeat-x;
+  background-attachment: fixed;
+}
+#tea {
+  float:left;
+}
+p {font-size:12px}
+a { 
+  text-decoration:none;
+  color:black;
+}
+a:hover {
+  color:red;
+}
+ul {
+  position:relative;
+  left:50px;
+}
+li {
+  display:inline;
+  margin-right:15px;
+  font-size:12px;
+  border:1px solid #333333;
+  background:#fdffba;
+  padding:5px;
+}
+#herb1{
+  position:relative;
+  left:30px;
+  top:10px;
+  width:400px;
+  color:darkgreen;
+}
+#herb2{
+  position:relative;
+  left:150px;
+  top:10px;
+  width:400px;
+  color:brown;
+}
+#herb3{
+  position:relative;
+  left:270px;
+  top:10px;
+  width:400px;
+  color:blue;
+}

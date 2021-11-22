@@ -1,0 +1,41 @@
+@charset "UTF-8";
+                /* 상단 오른쪽 메뉴바*/
+.name  {padding: 0; position: relative; text-align:right;}
+.name li {display: inline-block; margin: 0 3px 0 0;}
+.name li a {text-decoration: none;}
+.name a:before {color: lightgreen; font-weight:  bold; content: "1"; margin-right: 4px;}
+.name a {color: black; font-size: 13px; font-weight: bold;}
+.name li a:hover {color: lightgreen; font-size: 14px; transition: all 0.5s;}
+
+               /* 상단 왼쪽 제목 폰트 설정 */
+header h1 {position: absolute; top: 7px; margin: 5px; font-size: 18px;}
+header h1 a {position: relative; text-decoration: none; color: black; font-weight: bold;}
+header h1 a:hover {position: absolute; border-top: 2px solid; width: 85px; height: 1px; color: lightgreen; font-weight: bold; font-size: 18px; transition: all 0.5s;}
+
+               /* 중간 메뉴바 블록 및 폰트 설정 */
+header #ind {height: 115px; color: #4d4d4d; width: 1200px; margin: 0 auto;}
+header #div3 {position: relative; right: 30px; border-bottom: 1px solid; width: 1250px; top: 135px;}
+header #ind ul {position: relative; right: 80px; width: 1270px; margin: 0 auto;}
+header #ind ul li {list-style: none; color: white; background-color: black; float: left; line-height: 80px; vertical-align: middle; text-align: center;}
+header #ind .menulink {text-decoration: none; color: white; display: block; width: 180px; font-size: 15px; font-weight: bold; text-align: center; padding: 0; margin: 0;}
+header #ind .menulink:hover {color: lightgreen; background-color: #4d4d4d; transition: all 0.2s;}
+
+                /* 로그인 설정 및 아래 메뉴바 설정 */
+.id_Box {text-align: center;}
+
+.id_Uox {width: 1200px; margin: 0 auto; position: relative; left: 420px; top: 150px;}
+
+footer ul {font-size: 12px;}
+footer ul li {position: relative; float: left; list-style: none; left: 20px; top: 55px; margin-right: 5px; padding: 0;}
+footer a {text-decoration: none;}
+
+footer .id_Box{ border: 1px solid; width: 350px; height: 125px; left: 500px;}
+
+footer #id {position: relative; top: 20px; left: 70px;}
+footer #pw4 {position: relative; top: 50px; right: 84px;}
+
+footer .id5 {position: absolute; left: 20px; top: 22px;}
+footer .pw7 {position: absolute; left: 20px; top: 52px;}
+footer .id_Cox {position: relative;}
+
+center .submit {position: relative; left: 200px; bottom: 22px;}

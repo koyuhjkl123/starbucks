@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//Dtd HTML 4.01//EN" "http://www.w3.org/tr/html4/strict.dtd">
+<html>
+<head>
+<title>Select 메뉴 예제1</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {
+   background: url(images/bg28.jpg) no-repeat top right #b6d5e9;
+   font-family:돋움;
+   font-size:12px;
+ }
+ table {
+   width:420px;
+   height:248px;
+   border:0;
+   cellpadding:0;
+   cellspacing:5px;
+ }
+ #col_text {
+   width:110px;
+   text-align:right;
+   background:#deb9ff;
+   font-size:12px;
+ }
+ #col_input {width:320px}
+ #redtext {color:red}
+ #right_img {float:right}
+</style>
+<script type="text/javascript">
+function jump()
+{
+  location=document.myMenu.favorites.options[document.myMenu.favorites.selectedIndex].value
+}
+</script>
+</head>
+<body>
+<h3> 매일 가는 곳 </h3>
+<form name="myMenu">
+ <select name="favorites" size="1" onChange="jump()">
+  <option selected>### 즐겨찾기 ###</option>
+  <option value="http://www.wzd.com">위자드닷컴</option>
+  <option value="http://www.liworld.co.kr/">신기한 리스닝 나라</option>
+  <option value="http://www.usccb.org/nab/today.shtml">Today Reading</option>
+  <option value="http://www.pullbbang.com">풀빵닷컴</option>
+ </select>
+</form>
+</body>
+</html>

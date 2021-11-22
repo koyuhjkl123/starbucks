@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>자바 도큐먼트 예제1</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {text-align:center}
+ img {
+   border:2px dotted navy;
+   padding:10px;
+ }
+</style>
+<script type="text/javascript">
+ function changeBackground(hexNumber) {
+  document.bgColor = hexNumber;
+ }
+ function changeText(hexNumber) {
+  document.fgColor = hexNumber;
+ }
+</script>
+</head>
+<body>
+<form id="background">
+ <input type="button" value="red" onClick="changeBackground('#CC0000');changeText('#FFFFFF')">
+ <input type="button" value="green" onClick="changeBackground('#006600');changeText('#FFFFFF')">
+ <input type="button" value="yellow" onClick="changeBackground('#FFFF99');changeText('#0000FF')">
+ <input type="button" value="white" onClick="changeBackground('#FFFFFF');changeText('#000000')">
+ <input type="button" value="black" onClick="changeBackground('#000000');changeText('#FFFFFF')">
+ <input type="button" value="blue" onClick="changeBackground('#0000FF');changeText('#FFFF00')">
+</form>
+<h3>바꾸고 싶은 배경색 버튼을 클릭하세요.. 글자색도 함께 바뀝니다.</h3>
+<img src="images/img3.jpg">
+</body>
+</html>

@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>input 예제2</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {
+   font-family:돋움;
+   font-size:12px;
+ }
+ form {
+   position:absolute;
+   left:10%;
+   top:30px;
+ }
+ table {
+   width:420px;
+   height:248px;
+   border:0;
+   cellpadding:0;
+   cellspacing:5px;
+ }
+ #col_text {
+   width:110px;
+   text-align:right;
+   background:#deb9ff;
+   font-size:10px;
+ }
+ #col_input {width:320px}
+ #redtext {color:red}
+ #right_img {float:right}
+</style>
+</head>
+<body>
+<form action="register.cgi">
+<input type="hidden" value="funcom@gmail.com">
+<h3>회원 가입 정보</h3>
+<p id="redtext">아이디는 10자 미만, 비밀번호는 8자 미만으로 영문자와 숫자만 사용해서 입력하세요.</p>
+<table>
+ <tbody>
+  <col id="col_text">
+  <col id="col_input">
+  <tr>
+   <td>아 이 디</td>
+   <td><input type="text" name="id" size="20" maxlength="10"></td>
+  </tr>
+  <tr>
+   <td>비밀번호</td>
+   <td><input type="password" name="pw1" size="20" maxlength="8"></td>
+  </tr>
+  <tr>
+   <td>비밀번호 확인</td>
+   <td><input type="password" name="pw2" size="20" maxlength="8"></td>
+  </tr>
+  <tr>
+   <td>이름</td>
+   <td><input type="text" name="mytext1" size="20"></td>
+  </tr>
+  <tr>
+   <td>전화번호</td>
+   <td><input type="text" name="mytext2" size="20" value="숫자만 입력하세요"></td>
+  </tr>
+  <tr>
+   <td>주소</td>
+   <td><input type="text" name="mytext3" size="40"></td>
+  </tr>
+  <tr>
+   <td>사진 올리기</td>
+   <td><input type="file" name="photo" size="20"></td>
+  </tr>
+  </tbody>
+  <tfoot>
+  <tr>
+   <td colspan="2"><hr></td>
+  </tr>
+  <tr>
+   <td>&nbsp;</td>
+   <td><input name="submit" type="submit" value="등록하기"><input name="reset" type="reset" value="새로쓰기"></td>
+  </tr>
+ </tfoot>
+</table>
+</form>
+<img id="right_img" src="images/img17.png">
+</body>
+</html>

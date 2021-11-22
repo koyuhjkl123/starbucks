@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/javascript" href="javascript/sbs.js">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="more" class="test"></h1>
+
+    <script>
+
+      var salutation = "안녕하세요 , 반갑습니다."; /* 변수를 선언하고 문자열을 대입*/
+      var typesTestDiv = document.querySelector("#more");/* 변수를 선언하고 id = more를 대입한다.*/
+      typesTestDiv.innerHTML = salutation;
+
+
+      if (confirm("이 사이트 방문이 처음이십니까?")) {
+          document.querySelector("h1").innerHTML = "처음뵈겠습니다.";
+      }else {
+          document.querySelector("h1").innerHTML = "다시 만나뵈어 기쁩니다.";
+      }
+
+
+      
+      
+      
+      /**/
+    </script>
+    
+</body>
+</html>

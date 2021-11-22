@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+/* nav 설정 작업*/
+.nav-navcon {
+    background-color: #03C75A;
+    text-align: center;
+    height: 50px;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+ .menu-list, .nav-list, .NEWS-pay, .NEWS-poter {
+     display: none;
+ }
+ .nav-list > ul > li {
+     display: none;
+ }
+  .test-list {
+     display: none;
+ }
+
+
+ /*nav 상단 설정*/
+ .nav-navcon > .naver {
+     display: inline-block;
+     position: fixed; left: 400px;
+    padding: 12px 0 0 0 ;
+    color: white;
+ }
+
+ .nav-navcon > .cafe {
+     display: inline-block;
+     position: fixed; left: 455px;
+     color: white;
+     font-size: 20px;
+     padding: 10px 0 0 0;
+ }
+.text {
+    position: fixed; left: 505px;
+    height: 30px;
+    width: 340px;
+    margin: 8px 0 0 0;
+}
+.suchh {
+    position: fixed;
+    margin: 0 0 0 -107px;
+    padding: 8px 0 0 0;
+}
+.suhi-s {
+    display: inline-block;
+    width: 65px;
+    height: 35px;
+    background-color: #0fca62;
+    position: fixed;
+    margin: 9px 0 0 -65px;
+}
+.suhi-s > a {
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    padding: 9px 0 0 0;
+}
+.nav-login {
+    display: inline-block;
+    position: fixed; 
+    width: 55px;
+    height: 25px;
+    background-color: #0fca62;
+    border: solid 1px #28A93A;
+    margin: 10px 0 0 395px;
+}
+.nav-login > a {
+    color: white;
+    font-size: 9px;
+}
+.nav-list {
+    display: inline-block;
+    height: 50px;
+    border: solid 1px;
+}

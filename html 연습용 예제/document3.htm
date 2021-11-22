@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>도큐먼트 예제3</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {
+   text-align:center;
+   font-family:돋움;
+ }
+ p {
+   font-size:12px;
+   color:green;
+ }
+ img {
+   border:1px dotted darkgreen;
+   padding:5px;
+ }
+ input {
+   border:1px solid #333333;
+   padding:5px 0;
+   background:white;
+ }
+</style>
+<script type="text/javascript">
+ special = window.open("", "", "width=350, height=500")
+ function newOpen() {
+  special.document.open()
+  special.document.bgColor = "green"
+  special.document.fgColor = "white"
+  special.document.write("<h3>자바스크립트로 만드는 문서입니다</h3>")
+  special.document.write("<img src='images/fox.png'>")
+  special.document.close()
+ }
+ function newClear() {
+  special.document.open()
+  special.document.clear()
+  special.document.close()
+ }
+ function newClose() {
+  special.close()
+ }
+</script>
+</head>
+<body>
+<img src="images/img6.jpg">
+<p>[만들기] 버튼을 클릭하면 새 브라우저 창이 열리고 문서가 만들어지며<br>
+   [닫기] 버튼을 클릭하면 새 브라우저 창의 문서가 지워지면서 닫힙니다.</p>
+<form>
+ <input type="button" value="만들기" onClick="newOpen()">
+ <input type="button" value="지우기" onClick="newClear()">
+ <input type="button" value="닫기" onClick="newClose()">
+</form>
+</body>
+</html>

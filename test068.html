@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    <input type="button" value="click" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';">
+
+    <input type="button" value="night" id="night-day" onclick="
+    var target = document.querySelector('body');
+   if(document.querySelector('#night-day').value === 'night') {
+    target.style.backgroundColor = 'black';
+    target.style.color = 'white';
+    this.value = 'day';
+
+    /*
+    var links = document.querySelectorAll('a');
+    var i = 0;
+    while (i < links.length) {
+        links[i].style.color = 'powderblue';
+        i = i+1;
+    }
+    */
+} else {
+    target.style.backgroundColor = 'white';
+    target.style.color = 'black';
+    this.value = 'night';
+}">
+
+<ol>
+    <li>이름</li>
+    <li>사람</li>
+    <li>진수</li>
+</ol>
+<h2>Javascript</h2>
+
+<p>
+    Javascript은 영역을 확장을 시킨다.
+</p>
+
+<input type="button" value="hi" onclick="alert('hi')">
+<input type="text" onchange="alert('changed')">
+<input type="text" onkeydown="alert('keydown!')">
+    
+    <script>
+
+        document.write('hello wrold');
+        function getAverage(numbers) {
+            var sum = 0;
+            for(var i = 0; i < numbers.length; i++) {
+                sum += numbers[i];
+            }
+            return sum / numbers.length;
+        }
+
+        var average = getAverage([2, 8, 5, 3, 10]);
+
+        
+    </script>
+
+
+
+</body>
+</html>

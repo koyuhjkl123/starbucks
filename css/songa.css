@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body{max-width: 500px;}
+
+/* nav 작업 */
+.sorce{position: relative;  left: 435px;; width: 135px; height: 65px;}
+.fasbok, .tio, .naver{position: absolute; right: 405px; top: 15px; width: 30px; height: 30px;}
+.tio{position: absolute; right: 440px;}
+.fasbok{position: absolute; right: 475px;}
+.nav{max-width: 600px;}
+
+/* 상단 텍스트 작업 */
+.scv1, .scv2{font-size: 11px; font-family: inherit;}
+.scv11, .scv22{width: 8px; height: 8px; margin: 0 2px 0 0;}
+.scv1{position: absolute; right: 405px; top: 48px;}
+.scv2{position: absolute; right: 525px; top: 48px;}
+
+
+/*상단 이벤트 작업 및 텍스트 */
+
+.home{border: 1px solid; border-radius: 50px;; position: absolute;padding: 5px 0 0 0; right: 405px; width: 290px; height: 21px; font-size: 14px; text-align: center; }
+.home1{padding-right: 70px; color: red;}
+.ster{color: red;}
+.home2{display: none;}
+.sidename{position: absolute; right: 700px; z-index: 200; margin-top: 8px; color: red; font-size: 11px;font-weight: bold;} 
+
+/* 메뉴바 설정 작업 ( */
+a{direction: none; }
+header{margin-left: 360px;}
+.menu{ width: 950px; font-size:17px; font-weight: bold; overflow: auto;}
+.list_ul > ul{display: block; position: absolute; text-align: center; font-size: 15px; font-weight: bold; color: red; display: none;}
+.list_ol > ul{display: block; position: absolute; font-size: 15px; font-weight: bold; color: red; display: none;}
+.list_ul:hover > ul{position: absolute; right: -15px; bottom: -2px; display: block; border: 1px solid; color: red; width: 85px; height: 25px; list-style: none; padding: 10px 0 0 0;}
+.list_mo:hover .list_ul{display: none;}
+.list_ol:hover > ul{position: absolute; top: 10px; display: block; border: 1px solid gray;}
+.list_ul{position: relative; display: block; float: left;}
+.list_ol{position: relative; display: block; float: left;}
+.menu > li{margin: 55px 15px 0 35px; color: red;}
+
+/*검색창 설정 작업*/
+.title{position: absolute;top: 150px; left: 1325px; width: 170px; border-radius: 50px; border: 1px solid red;}
+.mind{position: absolute; top: 150px; left: 1300px; z-index: 200;}
+
+/*중간 이미지 설정 작업*/
+.imas{position: absolute; top: 180px; left: 207px; width: 1450px;height: 715px;}
+
+/*화살표 작업 설정 작업*/
+.dim31_ima{position: absolute; top: 400px; left: 1310px; z-index: 100;}
+.dim28_ima{position: absolute; top: 400px; z-index: 150;}
+
+/*하단 footer 설정 작업 */
+.fun{position: relative; top: 700px; left: 400px; font-size: 12px; margin-top: 15px; z-index: 150; text-align: center;}
+.imagss{position: absolute; top: 38px; left: 170px;}
+.text1{position: absolute; left: 290px; top: 43px;width: 320px;}
+.text2{position: absolute; left: 470px; width: 500px; top: 43px;}
+.text3{position: absolute; left: 290px; top: 62px; width: 280px;}
+.text4{position: absolute; left: 525px; top: 62px; width: 175px;}
+.text5{position: absolute; left: 715px; top: 62px;}

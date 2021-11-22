@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>이미지 예제1</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {text-align:center}
+ p {font-size:14px}
+ img {
+   border:1px dotted navy;
+   padding:5px;
+   margin-right:10px;
+ }
+ #redtext {
+   color:red;
+   font-weight:bold;
+ }
+ #boldtext {font-weight:bold}
+ hr {width:700px}
+</style>
+</head>
+<body>
+<img src="images/s_img1.jpg">
+<img src="images/s_img2.jpg">
+<img src="images/s_img3.jpg">
+<img src="images/s_img4.jpg">
+<hr>
+<script type="text/javascript">
+ num = document.images.length
+ document.write("<p>이 문서에는 모두 <span id='redtext'>" + num + "</span>개의 이미지가 있습니다.</p><br>")
+
+ for (i = 0; i < num; i++) {
+  document.write("<p><span id='boldtext'>[" + (i + 1) + "]</span>번 이미지 : <br>")
+  document.write("<span id='boldtext'>파일 경로 : </span>" + document.images[i].src)
+  document.write(", <span id='boldtext'>너비 : </span>" + document.images[i].width)
+  document.write(", <span id='boldtext'>높이 : </span>"+ document.images[i].height + "</p>")
+ }
+</script>
+</body>
+</html>

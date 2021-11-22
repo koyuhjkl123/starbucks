@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>여름 예제1</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {background:#00abff}
+ img {
+   float:left;
+   margin-right:20px;
+ }
+ #butt1 {
+   border:1px solid orange;
+   width:150px;
+   background:gold;
+   margin-right:20px;
+ }
+ #butt2 {
+   border:1px solid darkgreen;
+   width:150px;
+   background:lime;
+ }
+</style>
+<script type="text/javascript">
+ function isSummer(choice) {
+  if (choice == true) {
+    alert("역시! 여름은 더운 계절입니다");
+  }
+  else {
+    alert("이럴수가~ 여름은 덥지 않은 계절입니다");
+  }
+ }
+</script>
+</head>
+<body>
+<img src="images/summer.jpg">
+<h3>여름은 덥습니까?</h3>
+<form>
+ <input type="button" id="butt1" value="예" onClick="isSummer(true)">
+ <input type="button" id="butt2" value="아니오" onClick="isSummer(false)">
+</form>
+</body>
+</html>

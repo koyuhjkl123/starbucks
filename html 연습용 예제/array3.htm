@@ -1,0 +1,34 @@
+<html>
+<head>
+<title>자바 예제4</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {text-align:center}
+ h3 {
+   color:darkgreen;
+   font-weight:bold;
+ }
+</style>
+</head>
+<body>
+<script type="text/javascript">
+ var now = new Date();
+ var day = now.getDay();
+ var yoil = new Array();
+ alert(day);
+
+ yoil[0] = "월(月)";
+ yoil[1] = "화(火)";
+ yoil[2] = "수(水)";
+ yoil[3] = "목(木)";
+ yoil[4] = "금(金)";
+ yoil[5] = "토(土)";
+ yoil[6] = "일(日)";
+
+ var oneWeek = yoil.join(", ");
+ document.write("<img src='images/img1.jpg'>");
+ document.write("<br><br>")
+ document.write("일주일은 <h3>" + oneWeek + "</h3>입니다");
+</script>
+</body>
+</html>

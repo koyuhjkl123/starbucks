@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>파일 업로드</title>
+<meta charset="utf-8">
+<style type="text/css">
+ h3 {margin-top:50px}
+ form {margin-left:350px}
+ img {margin-left:250px}
+ li, p {font-size:12px}
+ #bttn {
+   border:1px solid gray;
+   padding:1px;
+   background:thistle;
+ }
+</style>
+<script type="text/javascript">
+ function showInfo(obj) {
+  str = "요소 이름 : " + obj.name + "\r 파일 이름 : " + obj.value
+  alert(str)
+ }
+</script>
+</head>
+<body>
+<img src="images/img1.jpg"><br>
+<form name="myform">
+ <ol>
+  <li> '찾아보기'를 클릭하여 업로드할 파일을 선택하세요.</li>
+  <li> 선택한 파일 정보를 보려면 '파일 정보'를 클릭하세요.</li>
+ </ol>
+ <br>
+ 첨부 파일 : <input type="file" name="myfile" value="">
+ <input id="bttn" type="button" value="파일 정보" onClick = "showInfo(myform.myfile)">

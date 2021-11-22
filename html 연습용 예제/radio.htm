@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>라디오 문제 예제1</title>
+<style type="text/css">
+ body {background:url(images/bg27.jpg) no-repeat left bottom #ebebeb}
+ form {margin-left:40%}
+</style>
+<script type="text/javascript">
+ function checkSolution(obj) {
+  if(obj[1].checked == true)
+   alert("정답입니다")
+  else
+   alert("틀렸습니다. \r정답은 [롤플레잉 게임]입니다.")
+ }
+</script>
+</head>
+<body>
+<form id="form1" name="form1">
+ <h4>정해진 역할을 수행하는 게임 장르는?</h4>
+ <input type="radio" name="sol" value="1">시뮬레이션 게임<br>
+ <input type="radio" name="sol" value="2">롤플레잉 게임<br>
+ <input type="radio" name="sol" value="3">아케이드 게임<br>
+ <input type="radio" name="sol" value="4">스포츠 게임<br><br>
+ <input type="button" value="정답 확인" onClick="checkSolution(form1.sol)">
+</form>
+</body>
+</html>

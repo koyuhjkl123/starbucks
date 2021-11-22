@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* 상단 오른쪽 메뉴바*/
+.name  {padding: 0; position: relative; text-align:right;}
+.name li {display: inline-block; margin: 0 3px 0 0;}
+.name li a {text-decoration: none;}
+.name a:before {color: lightgreen; font-weight:  bold; content: "1"; margin-right: 4px;}
+.name a {color: black; font-size: 13px; font-weight: bold;}
+.name li a:hover {color: lightgreen; font-size: 14px; transition: all 0.5s;}
+
+/* 상단 왼쪽 제목 폰트 설정 */
+header h1 {position: absolute; top: 7px; margin: 5px; font-size: 18px;}
+header h1 a {position: relative; text-decoration: none; color: black; font-weight: bold;}
+header h1 a:hover {position: absolute; border-top: 2px solid; width: 85px; height: 1px; color: lightgreen; font-weight: bold; font-size: 18px; transition: all 0.5s;}
+
+/* 중간 메뉴바 블록 및 폰트 설정 */
+header #ind {height: 115px; color: #4d4d4d; width: 1200px; margin: 0 auto;}
+header #div3 {position: relative; right: 30px; width: 1250px; top: 135px;}
+header #ind ul {position: relative; right: 80px; width: 1270px; margin: 0 auto;}
+header #ind ul li {list-style: none; color: white; background-color: black; float: left; line-height: 80px; vertical-align: middle; text-align: center;}
+header #ind .menulink {text-decoration: none; color: white; display: block; width: 180px; font-size: 15px; font-weight: bold; text-align: center; padding: 0; margin: 0;}
+header #ind .menulink:hover {color: lightgreen; background-color: #4d4d4d; transition: all 0.2s;}
+
+.submit{margin: 0; position:absolute; top: 50px; right: 465px;}
+.Newp{margin-bottom: 20px;}
+
+h1 {text-align: center; font-weight: bold; margin-bottom: 55px; border-bottom: 2px solid;}
+
+.ban1 {display: block; position: absolute; left: 40px; font-size: 20px;}
+
+.ban1 li {list-style:none; margin-right: 15px; margin-left: 10px; float:left; position: relative; left: 55px;}
+
+.ban1 li a {text-decoration: none; color: red;}
+.ban1 a:after {color: black; font-weight: bold; content: ">"; margin-left: 25px; padding: 0; list-style: none;}
+.ban1 a:
+
+.gad li > a {list-style: none; text-decoration: none; font-size: 20px;}
+
+.mo_mr > li {max-width: inherit;}

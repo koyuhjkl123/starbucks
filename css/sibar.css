@@ -1,0 +1,30 @@
+@charset "UTF-8";
+#name { padding: 0;position: relative; text-align: right;}
+#name li {display: inline-block; margin: 0 auto;}
+#name li a {text-decoration: none;}
+
+#name a:before {color: lightgreen; font-weight: bold;content: "l"; margin-right: 4px;}
+#name a {color: black; font-weight: bold; font-size: 13px;}
+#name li a:hover {color: lightgreen; font-weight: bold; font-size: 13px; transition: all 0.5s;}
+
+header h1 {position: absolute; top: 7px; margin: 0; font-size: 18px;}
+header h1 a {position: relative; text-decoration: none; color: black; font-weight: bold;}
+header h1 a:hover {position: absolute; border-top: 2px solid; width: 85px; height: 1px; color: lightgreen; font-weight: bold; font-size: 18px; transition: all 0.5s;}
+
+/*-----------------------메뉴바 설정-----------------------*/
+
+header #ind {height: 115px; color: #4d4d4d; width: 1200px; margin:0 auto;}
+header #div3 {position: relative; right: 30px; border-bottom: 1px solid; width: 1250px; top: 135px;}
+header #ind ul {position: relative; right: 80px; width: 1270px; margin: 0 auto;}
+header #ind ul li {list-style: none;color: white; background-color: black; float: left;line-height: 80px; vertical-align: middle; text-align: center;}
+header #ind .menulink {text-decoration: none; color: white; display: block; width: 180px; font-size: 15px; font-weight: bold; align: center; padding: 0; margin: 0;}
+header #ind .menulink:hover{color: lightgreen; background-color: #4d4d4d; transition: all 0.5s;}
+
+body .wrap {display: inline-block; overflow: hidden; position: relative;top: 20px;}
+body .user_wrap {display: inline-block; border: 1px solid; margin-right: 5px; width: 330px;}
+
+h2{position: absolute; right: 590px; margin-top: 45px;}
+table{position: absolute; right: 500px;margin-top: 97px; padding: 0;}
+
+
+#button, #button2 {position: relative; left: 710px; top: 240px;}

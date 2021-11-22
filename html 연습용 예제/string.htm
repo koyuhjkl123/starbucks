@@ -1,0 +1,43 @@
+html>
+<head>
+<title>스트링 예제1</title>
+<meta charset=" utf-8">
+<style type="text/css">
+ body {
+   background:#fcf2ad;
+   color:blue;
+   font-size:14px;
+   font-weight:bold;
+ }
+ img {
+   border:1px solid orange;
+   padding:10px;
+   float:left;
+ }
+ span {color:red}
+ h2 {
+   color:darkgreen;
+   font-family:Curlz MS, Comic Sans Serif, Arial;
+ }
+ #content {
+   margin-top:30px;
+   margin-left:480px;
+ }
+</style>
+</head>
+<body>
+<img src="images/smilekitty.jpg">
+<script type="text/javascript">
+ do {
+  yourText = prompt("4자 이상 8자 이하로 텍스트를 입력하세요. (한글가능) : ", "안녕하세요?")
+  len = yourText.length
+ }
+ while(len < 4 || len > 8)
+
+ document.write("<div id='content'>");
+ document.write("<h2>Always Smile</h2>")
+ document.write("<br><br>입력하신 텍스트는 <span>" + yourText + "</span>이고 <br><br>");
+ document.write("텍스트의 길이는 <span>" + len + "</span>입니다.</div>");
+</script>
+</body>
+</html>

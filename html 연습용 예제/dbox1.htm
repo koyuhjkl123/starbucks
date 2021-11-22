@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>다양한 대화상자</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {
+   margin:0;
+   background-image:url(images/bg9.jpg);
+ }
+ form {
+   position:absolute;
+   left:250px;
+   top:460px;
+ }
+ input {
+   border:1px solid green;
+   width:180px;
+   padding:3px;
+   margin-right:20px;
+ }
+ img {
+   position:fixed;
+   left:200px;
+   top:60px;
+ }
+</style>
+<script type="text/javascript">
+ function myTile(mybg) {
+  var reply = confirm("정말 배경 이미지를 바꾸겠습니까?")
+  if (reply == true)
+   document.body.style.backgroundImage = "url(" + mybg + ")"
+ }
+</script>
+<body onload="alert('제 홈피에 오신 것을 환영합니다')">
+<img src="images/mago.png">
+<form>
+ <input type="button" value="배경 이미지 바꾸기 (1) " onclick="myTile('images/bg10.gif')">
+ <input type="button" value="배경 이미지 바꾸기 (2) " onclick="myTile('images/bg11.gif')">
+</form>
+</body>
+</html>

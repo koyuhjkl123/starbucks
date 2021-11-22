@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>여러 이벤트 사용하기</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {background:url(images/bg22.jpg) no-repeat left center #000000}
+ form {
+   position:relative;
+   left:300px;
+   top:50px;
+ }
+ hr {
+  width:150px;
+  size:1px;
+  text-align:left;
+ }
+ img {
+   position:relative;
+   left:300px;
+   top:30px;
+   color:white;
+ }
+ #myfield1 {
+   width:150px;
+   padding:2px;
+   text-align:right;
+   font-size:12px;
+   color:white;
+ }
+ #myfield2 {
+   padding:2px;
+   border:1px solid #000000;
+ }
+ #butt {
+   border:1px solid #000000;
+   background:camel;
+   padding:2px;
+ }
+</style>
+</head>
+<body>
+<img src="images/login.jpg">
+<br>
+<form name="login" onSubmit="alert('입력하신 아이디와 비밀번호를 체크한 후 로그인합니다')">
+ <p><span id="myfield1">아 이 디</span>
+    <input id="myfield2" name="id" type="text" size="10" maxlength="10" onFocus="alert('아이디 필드입니다. \r 대소문자를 구별하여 입력하세요.')" onBlur="alert('아이디 필드를 벗어났습니다')"></p>
+ <p><span id="myfield1">비밀번호</span>
+    <input id="myfield2" name="pwd" type="password" size="10" maxlength="10"></p>
+ <p><input id="butt" type="submit" value="로그인"> <input id="butt" type="button" value="회원가입"></p>
+</form>
+</body>
+</html>

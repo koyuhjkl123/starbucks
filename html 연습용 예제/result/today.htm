@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>오늘은?</title>
+<style type="text/css">
+ body {
+   background:url(images/bg5.jpg);
+   background-repeat:repeat-x;
+   background-position:left bottom;
+   text-align:center;
+ }
+</style>
+<script type="text/javascript">
+ today = new Date();
+ day = today.getDay();
+ document.write("<span style='color:red; font size:12px'>" + today.getYear() + "년 ");
+ document.write((today.getMonth() + 1) + "월 ");
+ document.write(today.getDate() + "일 ");
+ document.write(today.getHours() + "시 ");
+ document.write(today.getMinutes() + "분 ");
+ document.write(today.getSeconds() + "초 </span>");
+ document.write("<br><br>");
+ if (day == 0) {
+  day = "일요일" 
+  mymsg = "내일을 위한 충전의 날입니다"
+ }
+ if (day == 1) {
+  day = "월요일"
+  mymsg = "멋진 한 주 시작하세요"
+ }
+ if (day == 2) {
+  day = "화요일"
+  mymsg = "오늘도 열심히 !! "
+ }
+ if (day == 3){
+  day = "수요일"
+  mymsg = "한 주도 벌써 반이나 지났네요"
+ }
+ if (day == 4){
+  day = "목요일"
+  mymsg = "한 주의 피로가 밀려오더라도 아자아자!!"
+ }
+ if (day == 5){
+  day = "금요일"
+  mymsg = "야호~ 내일은 주말이다"
+ }
+ if (day == 6){
+  day = "토요일"
+  mymsg = "오늘은 가족과 함께"
+ }
+ document.write("오늘은 <strong>" + day + "</strong>입니다.");
+ document.write("<br><br>")
+ document.write("<span style='color:blue; font-size:12px'>" + mymsg + "</span>");
+</script>
+</head>
+<body>
+</body>
+</html>

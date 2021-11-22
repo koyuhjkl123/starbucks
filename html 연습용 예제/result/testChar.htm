@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title> 입력 문자 체크하기 </title>
+<style type="text/css">
+ body {background: url(images/mybg3.jpg) no-repeat left bottom}
+ span {
+   color:red;
+   font-weight:bold;
+ }
+</style>
+<script>
+ function testChar(ch) {
+  if (ch == null)   
+   return;
+  else  
+   if (ch >= "A" && ch <= "Z")  
+    document.write("대문자 <span>" + ch + "</span>입니다")
+   else
+    if (ch >= "a" && ch <= "z")　　
+     document.write("소문자 <span>" + ch + "</span>입니다")
+    else {　　
+     alert(ch + "는 영문자가 아닙니다")
+     var inCh = prompt("키보드에서 아무 영문자나 한 글자만 입력하세요: ", "A");　
+     testChar(inCh)
+    }
+ }
+ var inChar = prompt("키보드에서 아무 영문자나 한 글자만 입력하세요: ", "A");
+ testChar(inChar);
+</script>
+</head>
+<body>
+</body>
+</html>

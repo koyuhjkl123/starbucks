@@ -1,0 +1,123 @@
+@charset "UTF-8";
+
+body{overflow-x: hidden;}
+.center_bg{ margin: 0 325px;}
+
+/*네비 상단 */
+.side{display: inline-block;position: relative; left: 370px; width: 1226px; height: 60px;}
+.ticon{position: relative; margin: 5px 0; width: 86px; height: 34px;}
+.img_right{ float: right;  width: 40px; height: 40px; cursor: pointer; }
+
+/*메뉴바 설정*/
+.menu{width: 1300px;}
+.nav_ul > ul{display: none; width: 50px; height: 25px; font-size: 20px;}
+.nav_ul:hover > a{font-weight: bold; font-size: 17px; color: black; }
+.nav_ul:hover > ul{position: absolute; display: block; font-size: 17px; z-index: 200;
+list-style: none; padding: 21px 0 0 0; width: 200px;}
+.nav_ul:hover > a{transition: all 0.4s;}
+.nav_ul:hover > li{transition: all 0.8s;}
+.nav_ul > ul > li {padding: 10px 0;}
+.nav_ul{display: block; position: relative; bottom: 55px; left: 80px; font-size: 15px; float: left; margin: 0 43px;}
+.menu > ul a{color: gray; text-decoration: none; list-style: none;}
+
+/*상단 이미지 설정*/
+.img_center{clear: both;}
+.center_img{position: relative;bottom: 12px;  width: 100%; height: 705px; padding: 0; } 
+
+/*화살표 위치 설정*/
+.right{position: relative; bottom: 370px; float: right; margin-right: 30px;}
+.left{position: relative; bottom: 370px; float: left; margin-left: 30px;}
+
+
+.center_bor{position: relative; left: 490px; border: 1px solid; margin: 30px 0 35px 0; 
+width: 255px; height: 50px;text-align: center; padding: 10px 0; box-sizing: border-box; }
+.center_can{font-size: 17px; font-weight: bold;}
+
+/* 중단 이미지 및 텍스트 설정 작업*/
+.ncs_img{position: relative;}
+.banada{ width: 370px; height: 420px;}
+
+
+/*꽃병 이미지에 있는 border 설정작업*/
+.detaill_view{display: flex; border: 1px solid; width: 130px; height: 40px; 
+line-height: 40px; box-sizing: border-box; padding: 0 0 10px 15px; margin-left: 18px;}
+.detaill_view{position: absolute; top: 90px;}
+
+/* border > a 안에 있는 텍스트 설정 작업*/
+.detaill_view  a{text-decoration: none; color: gray; font-size: 14px; font-weight: bold;}
+
+/* 이미지 > span 텍스트 작업 설정 */
+.dmk_text{position: absolute; top: 0; left: 0; font-size: 15px; font-weight: bold;
+margin: 33px 0 0 19px;}
+.dmk_BANDA{position: absolute; top: 0; left: 0; font-size: 27px; font-weight: bold;
+margin: 50px 0 0 19px;}
+.dmk_m{position: absolute; top: 0; display: block; font-size: 10px; font-weight: bold;
+margin: 50px 0 0 128px;}
+
+
+/* 충전기 이미지 작업 설정*/
+.speedy{position: absolute; top: 0;  margin: 0 0 0 25px; width: 420px; height: 200px;}
+
+/* 이미지 > span 텍스트 작업 설정*/
+.dmk_col{position: absolute; display: inline-block; width: 110px; height: 25px; font-size: 15.5px;
+margin: 33px 0 0 55px; font-weight: bold; box-sizing: border-box; letter-spacing: -2.5px;}
+.dmk_speedy{position: absolute; font-size: 25px; width: 125px; height: 25px; font-family:굴림;
+letter-spacing: -2px; box-sizing: border-box; margin: 55px 0 0 55px;font-weight: bold;}
+.dmk_c{position: absolute; font-size: 10px; font-weight: bold; margin: 58px 0 0 160px;}
+
+
+/*border 설정 작업 및 a링크 텍스트 설정 작업*/
+.dmk_detill{display: flex; position: absolute; top: 90px; left: 420px; border: 1px solid; 
+width: 130px; height: 40px; line-height: 40px; box-sizing: border-box; padding: 0 0 10px 15px;}
+.detaill2 a{text-decoration: none; color: gray; font-size:14px; font-weight: bold;}
+
+/*노트북 이미지 작업 설정 스탠드 top 220px*/
+.deatstand{border: 1px solid;}
+.stand{position: absolute; left: 395px; top: 220px; width: 420px; height: 200px;}
+.icrown{position: absolute; top: 0; right: 0;}
+
+/* 이미지 > span 텍스트 작업 설정*/
+.ikon{position: absolute; left: 51%; bottom: 31%; display: block; text-align: center;  font-weight: bold;
+font-size: 18px;}
+.si_stand{position: absolute; left: 51%; bottom: 24%; width: 110px; height: 35px;}
+.si_stand a{ font-size: 27px; font-weight: bold; text-decoration: none; color: black;
+text-transform: uppercase;}
+.si-box{position: absolute; left: 51%; bottom: 15%; border: 1px solid; width: 130px; height: 40px; letter-spacing: -1px;
+box-sizing: border-box; line-height: 40px; padding: 0 0 10px 15px;}
+.si-box a{text-decoration: none; color: gray; font-size:14px; font-weight: bold;}
+/* border 설정 작업 및 a 링크 텍스트 설정 작업*/
+.dmk_icrown{ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*중심 DMK 설정 폰트
+section{position: relative; top: 750px;}
+section img{width: 100px; height: 100px;}
+.center_ban{position: relative; right: 285px; display: inline-block; width: 250px; height: 45px; border: 1px solid gray;}
+.center_can{display: block; font-size: 15px; font-weight: bold; text-align: center; padding-top: 12px;}
+
+중단 이미지 설정 작업
+.center_dmk{position: relative;}
+
+
+
+
+중단 이미지에 들어갈 텍스트 설정 작업
+
+
+
+.detaill_view{display: inline-block; position: relative; right: 355px; bottom: 315px; width: 130px; height: 35px; border: 1px solid black;}
+
+.detaill_view > span{display: block; font-size: 12px; width: 77px; height: 33px; padding: 10px 0 0 25px;}
+*/

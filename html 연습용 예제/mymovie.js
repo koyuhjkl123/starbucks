@@ -1,0 +1,17 @@
+document.write('<object classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95">');
+document.write('<param name="Filename" value="nature.wmv">');
+document.write('<param name="AutoSize" value="true">');
+document.write('<param name="EnableContextMenu" value="false">');
+document.write('<param name="AutoStart" value="true">');
+document.write('<param name="ShowTracker" value="true">');
+document.write('<param name="EnableTracker" value="true">');
+document.write('<param name="Enabled" value="true">');
+document.write('<param name="ShowControls" value="true">');
+document.write('<param name="ShowDisplay" value="true">');
+document.write('<param name="Mute" value="false">');
+document.write('<param name="ShowAudioControls" value="true">');
+document.write('<param name="Volume" value="false">');
+document.write('<param name="ShowStatusBar" value="true">');
+document.write('<param name="ShowCaptioning" value="false">');
+document.write('<embed src="jeju.wmv" width="500" height="400" autostart="true" Enabled="true" Autosize="true" EnableTracker="true" EnableContextMenu="false"></embed>');
+document.write('/object>');

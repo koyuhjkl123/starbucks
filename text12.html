@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>회원 가입</title>
+  <style type="text/css">
+    h3 {text-align:center;}
+    .indent_txt {text-align:center;}
+   #myarea2 {margin-top:50px;}
+   #myarea3 {margin-top:50px;}
+    #butt {width:120px; height:55px; background-color:green; border:none; position: absolute; left: 550px;}
+    #butt2 {width:120px;height:55px;background-color: green;border:none;position: absolute; left: 680px;}
+
+    h2 {counter-reset: num;}
+    h2:before {content: counter(num);counter-increment: num 1;}
+    h3 {font-size:30px;color:green;font-weight:bold;}
+
+    body {text-align:center;}
+  </style>
+</head>
+
+<body>
+
+  <form  class="butt2" action="float.html">
+   <h3><a href="float.html">NewResion</a></h3>
+   <textarea id="myarea" name="member" cols="80" rows="10">
+     (주)뉴레이션 회원약관 정보입니다.
+
+     <h2>제 1조 (목적)</h2>
+
+     이 이용약관(이하 '약관'이라 합니다.)은 이용고객 께서 저희 (주)뉴레이션을 편리 하게 이용할수 있도록
+     서비스와 포인트 적립을 가능하도록 하며 이 제공하는 웹사이트는 이용함에 있어 회사와 회원간의 권리 ' 의무 및 책임사항을 규정함을 목적으로 합니다.
+
+     <h2>제2조 (약관의 명시와 개정)</h2>
+
+     ① 회사는 이 약관의 내용과 상호, 영업소, 소재지, 대표자의 성함, 사업자등록번호, 전화기록 등
+     초기화면 또는 연결화면을 통하여 게시합니다.
+     2. 회사는 약관의 규제에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망 이용약관에
+     관렵법을 위반하지 않는 법위에서 이  약관을 개정할 수 있도록 노력하겠습니다.
+      </textarea></p>
+      <p class="indent_txt">회원 약간의 동의하십니까?
+      <input name="joinchk1" type="radio" value="y"> 동의합니다. <input name="joinchk3" type="radio" value="n">동의하지 않습니다.
+     <br>
+
+     <p><textarea id="myarea2" name="member2" cols="80" rows="10">
+       (주)뉴레이션 회원약관 정보입니다.
+
+       <h2>제 2조 (목적)</h2>
+
+       이 이용약관(이하 '약관'이라 합니다.)은 이용고객 께서 저희 (주)뉴레이션을 편리 하게 이용할수 있도록
+       서비스와 포인트 적립을 가능하도록 하며 이 제공하는 웹사이트는 이용함에 있어 회사와 회원간의 권리 ' 의무 및 책임사항을 규정함을 목적으로 합니다.
+
+       제2조 (약관의 명시와 개정)
+
+       ① 회사는 이 약관의 내용과 상호, 영업소, 소재지, 대표자의 성함, 사업자등록번호, 전화기록 등
+       초기화면 또는 연결화면을 통하여 게시합니다.
+       2. 회사는 약관의 규제에 관한 법률, 전자거래기본법, 전자서명법, 정보통신망 이용약관에
+       관렵법을 위반하지 않는 법위에서 이  약관을 개정할 수 있도록 노력하겠습니다.
+        </textarea></p>
+        <p class="indent_txt">회원 약간의 동의하십니까?
+        <input name="joinchk2" type="radio" value="y"> 동의합니다. <input name="joinchk4" type="radio" value="n">동의하지 않습니다.
+       <br></p>
+
+
+       <p><textarea id="myarea3" name="member3" cols="80" rows="10">
+         기본적으로 a태그의 사용은
+
+<a href="URL">이동</a>
+이렇게 사용을 한다.
+
+이럴 경우 클릭시 해당 URL로 이동하게된다.
+
+그럼 다음의 경우
+
+<a href="#" onclick="location.href='URL'">이동</a>
+
+이럴 경우도 클릭하면 해당URL로 이동하게 된다.
+
+게시판의 글 삭제 프로세스의 경우 우선 삭제전 보통 "삭제하시겠습니까?" 라는 확인 작업을한다.
+
+이때 a태그와 자바스크립트를 쓰는데
+
+<a href="#" onclick="delchk();">삭제하기</a>
+
+<script type="text/javascript">
+
+function delchk(){
+
+    if(confirm("삭제하시겠습니까?")){
+
+        location.href = "write_del_ok.jsp?num=1";
+
+        return true;
+    } else {
+        return false;
+    }
+}
+</script>
+
+이렇게 사용하게된다.
+
+위의 경우 처럼 하게 될 경우 #은 최상위 루트를 가리켜 페이지가 없거나 아님 index.jsp같은 페이지를 보여주게 된다.
+
+그래서 여러가지로 실험해본 결과 form 태그의 onsubmit() 같은 기능이 onclick 이벤트에도 있다는 생각이 들었다.
+
+<a href="write_del_ok.jsp?num=1" onclick="return delchk();">삭제하기</a>
+
+<script type="text/javascript">
+
+function delchk(){
+
+       return confirm("삭제하시겠습니까?");
+}
+
+</script>
+
+위와 같이 코딩할 경우 삭제하기 를 클릭시 먼저 실행되는 것이 onclick이벤트 이다. 여기서 지정된 함수를 호출한다.
+
+그후 return delchk() 부분에서 delchk()의 리턴값이 true이면 href로 연결된 링크로 이동하고 false이면 이동을 하지
+
+않는다.[출처] [html] a태그에서의 onclick 이벤트의 이용법|작성자 동시사랑
+          </textarea></p>
+          <p class="indent_txt">회원 약간의 동의하십니까?
+          <input name="joinchk3" type="radio" value="y"> 동의합니다. <input name="joinchk" type="radio" value="n">동의하지 않습니다.
+         <br></p>
+         <span>
+      <input type="submit" id="butt" value="비동의">
+    </form>
+
+      <form class="butt" action="float1.html">
+     <input type="submit" id="butt2" value="동의">
+
+           </span>
+         </form>
+</body>
+</html>

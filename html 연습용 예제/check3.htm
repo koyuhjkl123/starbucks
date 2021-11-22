@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>회원가입 예제3</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {background:url(images/bg27.jpg) no-repeat left bottom #ebebeb}
+ #id, #pw, #text1, #text2, #phone {border:1px solid gray}
+ li {
+   list-style-type:none;
+   font-size:12px;
+ }
+ p {
+   font-size:12px;
+   line-height:30px;
+   text-align:left;
+ }
+ form {margin-left:40%}
+ h3 {
+   margin-top:50px;
+   margin-left:40%;
+ }
+</style>
+<script type="text/javascript">
+ function connectMe(obj) {
+  obj.click()
+ }
+</script>
+</head>
+<body>
+<h3>회원 가입</h3>
+<form id="form1" name="form1">
+ <p>아이디 : <input id="id" name="id" type="text" value="" size="10" maxlength="15"> &nbsp;&nbsp;
+    비밀번호 : <input id="pw" name="pw" type="password" value="" size="10" maxlength="15"><br>
+    이&nbsp; 름 : <input id="text1" name="tet1" type="text" value="" size="10" maxlength="20">&nbsp;&nbsp;
+    연락처 : <input id="phone" name="phone" type="text" value="" size="15" maxlength="15"><br>
+	주&nbsp; 소 : <input id="text2" name="text2" type="text" value="" size="50" maxlength="60"></p>
+ <hr>
+ <h5> ▣ 관심 분야 </h5>
+ <p><input type="checkbox" onClick="connectMe(form1.it);connectMe(form1.biz); connectMe(form1.dev)">인터넷 관련
+ <ul>
+  <li><input type="checkbox" name="it"> IT</li><br>
+  <li><input type="checkbox" name="biz"> 인터넷 비즈니스</li><br>
+  <li><input type="checkbox" name="dev"> 웹 개발</li>
+ </ul></p>
+ <p><input type="checkbox" name="ent"> 엔터테인먼트</p>
+ <hr>
+ <p><input type="button" name="bttn1" value="확인"> <input type="reset" name="bttn2" value="다시쓰기"></p>
+</form>
+</body>
+</html>

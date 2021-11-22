@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>자바 예제2</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {
+   background:url(images/bg9.jpg);
+   text-align:center;
+ }
+</style>
+</head>
+<body>
+<img src="">
+<script type="text/javascript">
+ var now = new Date();
+ var day = now.getDay();
+ var yoil = new Array();
+
+ yoil[0] = "images/sun.gif";
+ yoil[1] = "images/mon.gif";
+ yoil[2] = "images/tue.gif";
+ yoil[3] = "images/wed.gif";
+ yoil[4] = "images/thu.gif";
+ yoil[5] = "images/fri.gif";
+ yoil[6] = "images/sat.gif";
+
+ document.write("<img src='images/img1.jpg'>");
+ document.write("<br><br>");
+ document.write("오늘은 <img src=' " + yoil[day] + "'> 입니다");
+</script>
+</body>
+</html>

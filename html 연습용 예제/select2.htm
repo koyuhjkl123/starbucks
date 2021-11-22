@@ -1,0 +1,39 @@
+<html>
+<head>
+<title>콤보 메뉴</title>
+<style type="text/css">
+ h3 {
+   margin-left:350px;
+   margin-top:50px;
+ }
+ form {margin-left:350px}
+ select {
+   border:1px solid black;
+   background:khaki;
+   width:120px;
+ }
+ #bttn {
+   border:1px solid gray;
+   padding:2px;
+ }
+ img {float:left}
+</style>
+<script type="text/javascript">
+ function loadPage(obj) {
+  location.href = obj.options[obj.selectedIndex].value
+ }
+</script>
+</head>
+<body>
+<img src="images/img13.jpg">
+<h3>연인과 친구와 함께라면</h3>
+<form name="myform">
+ <select name="concert">
+  <option value="http://www.goodconcert.co.kr/">좋은 콘서트</option>
+  <option value="http://concertguide.co.kr/">콘서트 가이드</option>
+  <option value="http://www.ticketlink.com/">티켓링크</option>
+ </select>
+ <input id="bttn" type="button" value="이동" onClick="loadPage(myform.concert)">
+</form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>슬라이드 쇼</title>
+<style type="text/css">
+ body {text-align:center}
+ img {border:0}
+</style>
+<script type="text/javascript">
+ img1 = new Image () 
+ img1.src = "images/f1.jpg" 
+ img2 = new Image () 
+ img2.src = "images/f2.jpg" 
+ img3 = new Image () 
+ img3.src = "images/f3.jpg" 
+ img4 = new Image () 
+ img4.src = "images/f4.jpg" 
+ img5 = new Image () 
+ img5.src = "images/f5.jpg" 
+
+ num = 1;
+ function slideshow() { 
+  num = num + 1;
+  if (num == 6)
+   num = 1;
+  document.mypic.src = eval("img" + num + ".src") 
+} 
+</script>
+</head>
+<body>
+<h3> 슬라이드 쇼 </h3>
+<br> 
+<img src="images/f1.jpg" name="mypic">
+<br><br>
+<form>
+ <a href="#" onClick="slideshow()"><input type="button" value="다음"></a>
+</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Array 객체의 메서드</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {
+   background:url(images/bg10.gif);
+   text-align:center;
+   color:darkgreen;
+ }
+ #accent {font-weight:bold}
+</style>
+</head>
+<body>
+<img src="images/tour.jpg">
+<script type="text/javascript">
+ var marketing = new Array('Kim', 'Lee', 'Son');
+ var editing = new Array('Park', 'Won', 'Shin', 'Choi');
+ var thisTour = marketing.concat(editing);
+
+ document.write("<br><br>");
+ document.write("1사분기 해외연수 참가자는 영업팀+편집팀입니다.");
+ document.write("<br><br>");
+ document.write("<span id='accent'>" + thisTour + "</span>");
+</script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="sibar.css">
+<title>서점 계산기</title>
+
+</head>
+
+<body>
+
+  <ul id="name">
+    <li><a href="text12.html">회원가입</a></li>
+    <li><a href="float2.html">로그인</a></li>
+    <li><a href="sibar.html">서점 계산기</a></li>
+    <li><a href="">실험대상2</a></li>
+    <li><a href="">실험대상3</a></li>
+  </ul>
+  <center>
+  <div class="wrap">
+  <div class="user_wrap">
+      <input class="sion" type="text"size="50">
+   </div>
+      <input type="submit" value="검색" class="submit">
+   </div>
+   </center>
+ ﻿  <header>
+ ﻿      <h1><a href="float.html">NewResion</a></h1>
+   <div id="ind">
+     <div id="div3">
+   </div>
+   <nav>
+   <ul>
+       <li><a class="menulink" href="login3.html">실험 후보1</a></li>
+       <li><a class="menulink" href="#a">실험 후보2</a></li>
+       <li><a class="menulink" href="#a">실험 후보3</a></li>
+       <li><a class="menulink" href="#a">실험 후보4</a></li>
+       <li><a class="menulink" href="#a">실험 후보5</a></li>
+       <li><a class="menulink" href="#a">실험 후보6</a></li>
+       <li><a class="menulink" href="#a">실험 후보7</a></li>
+ </ul>
+ </nav>
+ </div>
+
+
+<form action="">
+
+<h2>서적 주문 계산기</h2>
+
+<table border="1">
+
+<tr>
+
+<th>책 제목</th>
+
+<th>가격</th>
+
+<th>수량</th>
+
+<th>합계</th>
+
+</tr>
+
+<tr>
+
+<td>멀티미디어 배움터2.0</td>
+
+<td>25000원</td>
+
+<td><input id="book1" size="2" type="text" value="0" onclick="this.select();"></td>
+
+<td><input id="book1total" size="6" type="text" value="0">원</td>
+
+</tr>
+
+<tr>
+
+<td>모바일 멀티 미디어</td>
+
+<td>27000원</td>
+
+<td><input id="book2" size="2" type="text" value="0" onclick="this.select();"></td>
+
+<td><input id="book2total" size="6" type="text" value="0">원</td>
+
+</tr>
+
+<tr>
+
+<td>자바입문 일론과실습</td>
+
+<td>32100원</td>
+
+<td><input id="book3" size="2" type="text" value="0" onclick="this.select();"></td>
+
+<td><input id="book3total" size="6" type="text" value="0">원</td>
+
+</tr>
+
+<tr>
+
+<td>합계</td>
+
+<td></td>
+
+<td><input id="totalQ" size="2" type="text" value="0" ></td>
+
+<td><input id="totalprice" size="6" type="text" value="0" ></td>
+
+</tr>
+
+</table>
+
+
+<input type="button" id="button" onclick="All();" value="합계 계산">
+
+<input type="reset" id="button2" value="초기화">
+
+
+</form>
+
+
+<script type="text/javascript">
+
+function All(){
+
+var n1 =document.getElementById('book1').value;
+
+var n2 =document.getElementById("book2").value;
+
+var n3 =document.getElementById("book3").value;
+
+
+var p1 =25000*n1;
+
+var p2 =27000*n2;
+
+var p3 =32100*n3;
+
+
+document.getElementById("book1total").value= p1;
+
+document.getElementById("book2total").value= p2;
+
+document.getElementById("book3total").value= p3;
+
+
+var totalQU=parseInt(n1)+parseInt(n2)+parseInt(n3);
+
+document.getElementById('totalQ').value=totalQU;
+
+
+var totalpriceF=p1+p2+p3;
+
+document.getElementById('totalprice').value=totalpriceF;}
+
+</script>
+
+</body>
+
+</html>

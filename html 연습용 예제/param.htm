@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>매개변수를 가진 함수</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {background:url(images/bg18.jpg) no-repeat right top #ffc513}
+ h1, h3 {color:blue}
+</style>
+<script type="text/javascript">
+ function printName(name, field) {
+  document.write("<h1> 이름: " + name + "</h1>");
+  document.write("<h3> 관심분야 : " + field + "</h3>");
+ }
+ yourName = prompt("이름을 입력해 주세요: ", "홍길동")
+ favField = prompt("관심분야는 무엇인가요? : ", "웹 디자인")
+ printName(yourName, favField)
+</script>
+</head>
+<body>
+</body>
+</html>

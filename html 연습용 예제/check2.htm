@@ -1,0 +1,59 @@
+<html>
+<head>
+<title>회원가입 예제2</title>
+<meta charset="utf-8">
+<style type="text/css">
+ #id, #pw, #text1, #text2, #phone {border:1px solid gray}
+ p {
+   font-size:12px;
+   line-height:30px;
+   text-align:left;
+ }
+ form {margin-left:20%}
+ h3 {margin-left:20%}
+ #boldtext {font-weight:bold}
+</style>
+<script type="text/javascript">
+ function displayList(list) {
+  var total = ""
+  for (var i = 0; i < list.length; ++i) {
+   if (list[i].checked)
+        total += list[i].value + "\r"
+  }
+  if (total == "")
+   alert("아무것도 선택하지 않으셨군요!")
+  else
+   alert(total)
+ }
+ function deleteList(list) {
+  for (var i = 0; i < list.length; ++i) {
+   if (list[i].checked)
+    list[i].checked = false
+  }
+ }
+</script>
+</head>
+<body>
+<img src="images/img10.jpg">
+<h3>회원 가입</h3>
+<form id="form1" name="form1">
+ <p><span id="boldtext">아이디 : </span><input id="id" name="id" type="text" value="" size="10" maxlength="15">&nbsp;&nbsp;
+    <span id="boldtext">비밀번호 : </span><input id="pw" name="pw" type="password" value="" size="10" maxlength="15"><br>
+    <span id="boldtext">이&nbsp; 름 : </span><input id="text1" name="tet1" type="text" value="" size="10" maxlength="20">&nbsp;&nbsp;
+    <span id="boldtext">연락처 : </span><input id="phone" name="phone" type="text" value="" size="15" maxlength="15"><br>
+	<span id="boldtext">주&nbsp; 소 : </span><input id="text2" name="text2" type="text" value="" size="50" maxlength="60"></p>
+ <hr>
+ <p>▣ 앞으로 더 공부해 보고 싶은 분야<br>
+ <input type="checkbox" value="웹 에디터 중급 활용" name="computer">웹 에디터 중급 활용
+ <input type="checkbox" value="HTML 활용" name="computer">HTML 활용
+ <input type="checkbox" value="자바스크립트" name="computer">자바스크립트<br>
+ <input type="checkbox" value="CSS(스타일시트)" name="computer">CSS(스타일시트)
+ <input type="checkbox" value="웹 프로그래밍" name="computer">웹 프로그래밍
+ <input type="checkbox" value="플래시" name="computer">플래시<br>
+ <input type="button" value="선택한 내용 보기" onClick="displayList(this.form.computer)">
+ <input type="button" value="다시 선택하기" onClick="deleteList(this.form.computer)">
+ <hr>
+ <p><input type="button" name="bttn1" value="확인"> <input type="reset" name="bttn2" value="다시쓰기"></p>
+</form>
+</body>
+</html>

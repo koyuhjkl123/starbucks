@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+/*연습용 메뉴*/
+#jisu > p:nth-of-type(4){color: red; font-weight: bold;}
+#jisu > .olpx{font-size: 15px;}
+#jisu > .olen{font-size: 5em;}

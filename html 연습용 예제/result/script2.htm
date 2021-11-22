@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>문서 배경색 바꾸기</title>
+<style type="text/css">
+ body { 
+   font-size:12px;
+   font-family:굴림;
+ }
+ input {
+   border:1px solid black;
+   margin-right:20px;
+ }
+ #bear {float:left}
+ #txt {margin-left:320px}
+</style>
+<script type="text/javascript" src="changeColor.js"></script>
+</head>
+<body>
+아래의 색상 버튼을 클릭하면 문서의 배경색이 바뀝니다.
+<form method="post" name="background">
+ <input type="button" value="green" onclick="changeBackground('green'); changeText('white')">
+ <input type="button" value="yellow" onclick="changeBackground('yellow'); changeText('blue')">
+ <input type="button" value="white" onclick="changeBackground('white'); changeText('black')">
+</form>
+<hr>
+<img src="images/bear.png" id="bear">
+<p id="txt">지금 눈을 새롭게 뜨고 주위를 바라보세요 <br>
+늘 사용하는 구형 휴대폰, 어느새 손에 익은 볼펜 한자루,<br>
+잠들어 있는 가족들 그리고 나를 기억하는 친구들,<br>
+사랑했던 사람, 지금 사랑하는 사람.<br>
+먼저 소중한 느낌을 가지려 해보세요 <br>
+먼저 그 마음을 되살리고 주위를 돌아보세요 <br>
+가까운 사람들에게, 사랑하는 사람에게<br>
+따뜻한 말 한마디를 먼저 선물해요 <br>
+"오늘 옷 참 잘 어울려요”라고 하면서  먼저 웃으며 인사해요.<br><br>
+- 법정스님 -</p>
+</body>
+</html>

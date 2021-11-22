@@ -1,0 +1,64 @@
+<html>
+<head>
+<title>링크 예제1</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {text-align:center}
+ #mymenu {
+   margin:0px;
+   padding:0 0 10px 10px;
+ }
+ #mymenu li {
+   margin:0;
+   padding:0;
+   listy-style-type:none;
+   display:inline;
+ }
+ #mymenu a {
+   float:left:
+   line-height:14px;
+   font-weight:bold;
+   margin:0 10px 4px 10px;
+   padding-right:10px;
+   border-right:1px solid green;
+   text-decoration:none;
+   font-size:16px;
+   color:green;
+ }
+ #mymenu a.active, #mymenu a:hover {
+   border-bottom:4px solid #696;
+   padding-bottom:4px;
+   color:green;
+ }
+ #mymenu a:hover {color:darkgreen}
+ p {font-size:14px}
+ #redtext {
+   color:red;
+   font-weight:bold;
+ }
+ #bluetext {
+   color:blue;
+   font-weight:bold;
+ }
+ hr {width:500px}
+</style>
+</head>
+<body>
+<h3> 유용한 사이트 모음 </h3>
+<ul id="mymenu">
+ <li><a href="http://www.google.co.kr" target="_blank">구글</a></li>
+ <li><a href="http://www.naver.com" target="_blank">네이버</a></li>
+ <li><a href="http://www.daum.net" target="_blank">다음</a></li>
+</ul>
+<hr>
+<script type="text/javascript">
+ num = document.links.length;
+ document.write("<p>이 문서에는 모두 <span id='redtext'>" + num + "</span>개의 링크가 있습니다.</p>");
+ document.write("<hr>");
+ for (i = 0; i < num; i++) {
+  document.write("<p>links[" + i + "]의 href는 <span id='bluetext'>" + document.links[i].href + "</span></p>");
+  document.write("<p>links[" + i + "]의 target은 <span id='bluetext'>" + document.links[i].target + "</span></p>");
+ }
+</script>
+</body>
+</html>

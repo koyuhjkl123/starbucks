@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+
+    
+    <script>
+
+        var tableEl = document.createElement("table");
+
+        for (var i = 1; i <= 8; i++) {
+            var trEl = document.createElement("tr");
+            for(var j = 1; j <10; j++) {
+                var tdEl = document.createElement("td");
+                tdEl.append(i * j);
+                trEl.append(tdEl);
+            }
+            tableEl.append(trEl);
+        }
+        document.querySelector("body").append(tableEl);
+
+
+
+
+
+
+/*
+
+        var things = ['냉장고', '코끼리', '기린'];
+        var steps = ['냉장고 문을 연다.',
+    '기린을 꺼낸다.',
+    '코끼리를 넣는다.',
+    '냉장고 문을 닫는다.'];
+
+    var thingsUl = document.querySelector("ul");
+    for(var i = 0; i < things.length; i++) {
+        var li = document.createElement("li");
+        li.append(things[i]);
+        thingsUl.append(li);
+    }
+
+    var stepsOl = document.querySelector("ol");
+    for(var i = 0; i < steps.length; i++) {
+        var li = document.createElement("li");
+        li.append(steps[i]);
+        stepsOl.append(li)
+    }
+
+
+
+
+        var spanEl = document.createElement("span");
+        spanEl.append("삽입은 문자열");
+        document.querySelector("div").append(spanEl);
+        */
+         
+     </script>
+</body>
+</html>

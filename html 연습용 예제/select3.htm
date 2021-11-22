@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>콤보 메뉴</title>
+<meta charset="utf-8">
+<style type="text/css">
+ h3 {
+   margin-left:350px;
+   margin-top:50px;
+ }
+ form {margin-left:350px}
+ select {
+   border:1px solid black;
+   background:khaki;
+   width:250px;
+ }
+ #bttn {
+   border:1px solid gray;
+   padding:2px;
+ }
+</style>
+<script type="text/javascript">
+ function loadPage(obj) {
+  location.href = obj.options[obj.selectedIndex].value
+ }
+</script>
+</head>
+<body>
+<img src="images/img14.jpg">
+<h3>올 가을에 꼭 놀러가고 싶은 곳은?</h3>
+<form name="myform">
+ <select name="travel" onFocus="alert('멋진 휴가 계획 세우세요~')" onChange="loadPage(myform.travel)">
+  <option value="http://www.jungdong.com/">바다가 보이는 역, 정동진
+  <option value="http://seorak.knps.or.kr/">단풍을 만나기 위해, 설악산
+  <option value="http://jejutour.jeju.go.kr/">자연이 살아있는 제주도
+  <option value="http://bstea.teabiz.co.kr/">차향이 그윽한 보성 차밭
+  <option value="http://www.oedoguide.com/">겨울연가 촬영지, 외도
+ </select>
+</form>
+</body>
+</html>

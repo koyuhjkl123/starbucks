@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>타임 예제2</title>
+<meta charset="utf-8">
+<style type="text/css">
+ body {
+   background:url(images/pic2.jpg) no-repeat right bottom #99b115;
+   text-align:center;
+ }
+ input {
+   border:1px solid black;
+   background:#f3ffb4;
+   margin-right:20px;
+   padding:1px 5px;
+ }
+</style>
+<script type="text/javascript">
+ function displayAlert() {
+  alert("이 창은 <확인> 버튼을 누른 후 3초 뒤에 다시 나타납니다.")
+  timerID=setTimeout("displayAlert()", 3000)
+ }
+</script>
+</head>
+<body>
+<xmp><시작>버튼을 클릭하면 3초마다 경고 창이 나타납니다.</xmp>
+<xmp>멈추고 싶다면 <멈춤> 버튼을 클릭하세요.</xmp>
+<form>
+ <input type="button" value="시작" onClick="displayAlert()">
+ <input type="button" value="멈춤" onClick="clearTimeout(timerID)">
+</form>
+</body>
+</html>

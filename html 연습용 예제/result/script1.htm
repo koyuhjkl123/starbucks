@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>문서 배경색 바꾸기</title>
+<style type="text/css">
+ body { 
+   font-size:12px;
+   font-family:굴림;
+ }
+ input {
+   border:1px solid black;
+   margin-right:20px;
+ }
+</style>
+<script type="text/javascript">
+ function changeBackground(colorName) {
+  document.bgColor = colorName;
+ }
+</script>
+</head>
+<body>
+아래의 색상 버튼을 클릭하면 문서의 배경색이 바뀝니다.
+<form method="post" name="background">
+ <input type="button" value="green" onClick="changeBackground('green')">
+ <input type="button" value="yellow" onClick="changeBackground('yellow')">
+ <input type="button" value="white" onClick="changeBackground('white')">
+</form>
+</body>
+</html>
