@@ -46,24 +46,7 @@
 // reverse : 배열을 뒤집기
 // join: 배열을 인수 기준으로 문자로 병합해 반환
 
-const searchEl = document.querySelector('.search');
-const searchInputEl = searchEl.querySelector('input');
 
-searchEl.addEventListener('click', function() {
-    //Logic..
-    searchInputEl.focus(); // 마우스 클릭할때
-
-});
-
-searchInputEl.addEventListener('focus', function(){
-    searchEl.classList.add('focused'); // focused 클래스 추가
-    searchInputEl.setAttribute('placeholder', '통합검색'); // html 속성을 지정할때
-});
-
-searchInputEl.addEventListener('blur', function(){
-    searchEl.classList.remove('focused'); // focused 클래스 삭제
-    searchInputEl.setAttribute('placeholder', ''); // html 속성을 지정할때
-});
 
 const badgeEl = document.querySelector('header .badges');
 const toTopEl = document.querySelector('#to-top');
@@ -207,5 +190,3 @@ spyEls.forEach(function (spyEl) {
 });
 
 
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear(); // 2021년 반환
