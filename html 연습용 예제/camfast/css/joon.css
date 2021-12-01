@@ -1,0 +1,161 @@
+body {
+    /* overflow-y: hidden; */
+}
+
+header {
+    font-size: 16px;
+    line-height: 1.4;
+}
+li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img {
+    display: block;
+    width: 100%;
+    max-height: 900px;
+    opacity: 0.5;
+}
+
+
+.inner {
+    width: 100%;
+    height: 70px;
+}
+
+.btn{
+    height: 60px;
+    text-align: center;
+    width: 300px;
+    border-radius: 40px;
+    border: 2px solid #333;
+    font-size: 20px;
+    color: #333;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 60px;
+}
+
+.container {
+    position: relative;
+    width: 65%;
+    height: 100%;
+    margin: 0 auto;
+    
+}
+
+.inner .left_menu {
+    position: absolute;
+    top: 12px;
+    left: 0;
+    
+}
+
+
+.inner .right_menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+}
+
+.inner .right_menu .main_menu {
+    display: flex;
+
+}
+
+.inner ul.main_menu li {
+    padding: 5px 16px;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.inner ul.main_menu li a {
+    display: block;
+    height: 46px;
+    text-decoration: none;
+    color: #333;
+
+}
+
+.inner ul.main_menu li a:hover {
+    color: red;
+    border-bottom: 2px solid red;
+    
+}
+
+section .main_section {
+    position: relative;
+    width: 100%;
+    z-index: 9;
+    height: 100%;
+    max-height: 900px;
+
+}
+
+
+section .main_section .text_section {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 1000px;
+    z-index: 5;
+    color: #FFF;
+    text-align: center;
+    transform: translateX(-50%);
+    font-family: 'Noto Sans KR', sans-serif;
+    
+
+
+}
+
+section .main_section .text_list li {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+section .main_section .text_list li.sub_ed {
+    padding-bottom: 30px;
+}
+
+section .main_section .text_list li.sub_nd {
+    padding-bottom: 40px;
+}
+
+
+section .main_section .text_list_sub {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.main_section .section .pagination .swiper-pagination {
+    position: absolute;
+    top: 315px;
+    right: 56%;
+    width: 12px;
+    height: 12px;
+    background-color: #FFF;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.main_section .section.display {
+    display: none;
+}
+
+.main_section .section .pagination .swiper-pagination:active {
+    padding-left: 40px;
+}
+
+.main_section .section .pagination .swiper-pagination.nav {
+    margin-right: 20px;
+}
+
+.main_section .section .pagination {
+    position: relative;
+}
+

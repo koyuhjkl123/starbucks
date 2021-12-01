@@ -1,0 +1,39 @@
+
+.inner {
+    background-color: orange;
+    width: 850px;
+    height: 150px;
+    position: relative;
+    z-index: 9;
+}
+
+.grup {
+   
+    background-color: blanchedalmond;
+
+}
+
+
+.reserve-store .medal .front {
+    transform: rotateY(0deg);
+}
+
+.reserve-store .medal:hover .front {
+    transform: rotateY(180deg);
+}
+
+.reserve-store .medal .back {
+    transform: rotateY(-180deg);
+}
+
+.reserve-store .medal:hover .back {
+    transform: rotateY(0deg);
+}
+
+.reserve-store .medal .back .btn {
+    position: absolute;
+    top: 240px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
