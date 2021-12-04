@@ -66,6 +66,7 @@ searchInputEl.addEventListener('blur', function(){
 });
 
 const badgeEl = document.querySelector('header .badges');
+const toTopEl = document.querySelector('#to-top');
 
 
 // window.addEventListener('scroll', function() { // window : 프로젝트 화면 자체
@@ -85,7 +86,7 @@ window.addEventListener('scroll',_.throttle(function() { // throttle 오류 방�
     }else {
         // 배지 보이기
         // badgeEl.style.display = 'block';
-        gsap.to(badgeEl, .6, {
+        gsap.to(toTopEl, .6, {
             opacity: 1,
             display : 'block'
         })
